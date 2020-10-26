@@ -1,0 +1,11 @@
+{
+  "name": "onlinegames",
+  "version": "1.0.0",
+  "description": "A Simple online game site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harshit Bargujar",
+  "license": "MIT"
+}
