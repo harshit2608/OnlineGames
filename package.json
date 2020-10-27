@@ -2,10 +2,21 @@
   "name": "onlinegames",
   "version": "1.0.0",
   "description": "A Simple online game site",
-  "main": "index.js",
+  "default": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run clean && parcel src/index.html --out-dir development -p 3000",
+    "build": "parcel build src/*.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache"
   },
   "author": "Harshit Bargujar",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.27.0"
+  }
 }
